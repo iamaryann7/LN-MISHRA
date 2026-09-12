@@ -1,1 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lalit Narayan Mishra College</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <div class="logo-circle">LN</div>
+      <div>
+        <h2>LN Mishra College</h2>
+        <span>Education • Excellence • Future</span>
+      </div>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#notices">Notices</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <button onclick="openLogin()">Login</button>
+    </div>
+
+    <div class="menu" onclick="toggleMenu()">☰</div>
+  </nav>
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="tag">WELCOME TO OUR COLLEGE</p>
+
+    <h1>Shape Your Future<br>
+      <span>With Quality Education</span>
+    </h1>
+
+    <p>
+      Welcome to Lalit Narayan Mishra College.
+      Discover knowledge, build confidence and create a successful future.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#about" class="btn">Explore College</a>
+      <a href="#contact" class="btn outline">Contact Us</a>
+    </div>
+  </div>
+
+  <div class="hero-card">
+    <div class="building-icon">🏛️</div>
+    <h2>LN Mishra College</h2>
+    <p>Learning Today, Leading Tomorrow</p>
+  </div>
+</section>
+
+
+<!-- STATS -->
+<section class="stats">
+  <div>
+    <h2>25+</h2>
+    <p>Years of Excellence</p>
+  </div>
+
+  <div>
+    <h2>20+</h2>
+    <p>Courses</p>
+  </div>
+
+  <div>
+    <h2>1000+</h2>
+    <p>Students</p>
+  </div>
+
+  <div>
+    <h2>50+</h2>
+    <p>Faculty Members</p>
+  </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-title">
+    <p>ABOUT US</p>
+    <h2>Welcome to Lalit Narayan Mishra College</h2>
+  </div>
+
+  <div class="about">
+    <div class="about-box">
+      <div class="big-icon">🏫</div>
+    </div>
+
+    <div class="about-text">
+      <h2>Education That Creates Opportunities</h2>
+
+      <p>
+        Lalit Narayan Mishra College is committed to providing
+        students with quality education and a supportive learning
+        environment.
+      </p>
+
+      <p>
+        Our aim is to help students develop academic knowledge,
+        practical skills, confidence and responsible citizenship.
+      </p>
+
+      <div class="features">
+        <div>✓ Experienced Faculty</div>
+        <div>✓ Modern Learning</div>
+        <div>✓ Student Activities</div>
+        <div>✓ Career Guidance</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- COURSES -->
+<section class="section gray" id="courses">
+
+  <div class="section-title">
+    <p>ACADEMICS</p>
+    <h2>Our Courses</h2>
+    <span>Choose the right path for your future.</span>
+  </div>
+
+  <div class="course-grid">
+
+    <div class="course-card">
+      <div class="course-icon">💻</div>
+      <h3>Computer Science</h3>
+      <p>Learn programming, technology and modern computer applications.</p>
+      <a href="#contact">Learn More →</a>
+    </div>
+
+    <div class="course-card">
+      <div class="course-icon">📊</div>
+      <h3>Commerce</h3>
+      <p>Build knowledge in business, accounting, finance and management.</p>
+      <a href="#contact">Learn More →</a>
+    </div>
+
+    <div class="course-card">
+      <div class="course-icon">🔬</div>
+      <h3>Science</h3>
+      <p>Explore scientific concepts through academic and practical learning.</p>
+      <a href="#contact">Learn More →</a>
+    </div>
+
+    <div class="course-card">
+      <div class="course-icon">📚</div>
+      <h3>Arts</h3>
+      <p>Develop knowledge in humanities, social sciences and languages.</p>
+      <a href="#contact">Learn More →</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- NOTICE -->
+<section class="section" id="notices">
+
+  <div class="section-title">
+    <p>UPDATES</p>
+    <h2>Latest Notices</h2>
+  </div>
+
+  <div class="notice-container">
+
+    <div class="notice">
+      <div class="date">
+        <strong>15</strong>
+        <span>SEP</span>
+      </div>
+      <div>
+        <h3>Admission Notification</h3>
+        <p>Important information regarding new admissions.</p>
+      </div>
+      <button onclick="showNotice('Admission Notification')">View →</button>
+    </div>
+
+    <div class="notice">
+      <div class="date">
+        <strong>20</strong>
+        <span>SEP</span>
+      </div>
+      <div>
+        <h3>Examination Notice</h3>
+        <p>Students are advised to check the examination schedule.</p>
+      </div>
+      <button onclick="showNotice('Examination Notice')">View →</button>
+    </div>
+
+    <div class="notice">
+      <div class="date">
+        <strong>25</strong>
+        <span>SEP</span>
+      </div>
+      <div>
+        <h3>College Event</h3>
+        <p>Annual college activities and student programs.</p>
+      </div>
+      <button onclick="showNotice('College Event')">View →</button>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- GALLERY -->
+<section class="section gray" id="gallery">
+
+  <div class="section-title">
+    <p>OUR CAMPUS</p>
+    <h2>College Gallery</h2>
+  </div>
+
+  <div class="gallery">
+
+    <div class="gallery-item">
+      <div>🏛️</div>
+      <h3>College Campus</h3>
+    </div>
+
+    <div class="gallery-item">
+      <div>👨‍🎓</div>
+      <h3>Student Activities</h3>
+    </div>
+
+    <div class="gallery-item">
+      <div>📖</div>
+      <h3>Library</h3>
+    </div>
+
+    <div class="gallery-item">
+      <div>🧪</div>
+      <h3>Laboratory</h3>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ADMISSION -->
+<section class="admission">
+
+  <div>
+    <p>START YOUR JOURNEY</p>
+    <h2>Ready to Begin Your College Journey?</h2>
+    <span>Join us and take the first step towards a brighter future.</span>
+  </div>
+
+  <button onclick="openRegister()">Register Now →</button>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+
+  <div class="section-title">
+    <p>GET IN TOUCH</p>
+    <h2>Contact Us</h2>
+  </div>
+
+  <div class="contact">
+
+    <div class="contact-info">
+      <div>
+        <span>📍</span>
+        <div>
+          <h3>Address</h3>
+          <p>Lalit Narayan Mishra College<br>Bihar, India</p>
+        </div>
+      </div>
+
+      <div>
+        <span>📞</span>
+        <div>
+          <h3>Phone</h3>
+          <p>+91 XXXXX XXXXX</p>
+        </div>
+      </div>
+
+      <div>
+        <span>✉️</span>
+        <div>
+          <h3>Email</h3>
+          <p>info@college.edu</p>
+        </div>
+      </div>
+    </div>
+
+    <form onsubmit="sendMessage(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Subject" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+  <div class="footer-main">
+
+    <div>
+      <h2>LN Mishra College</h2>
+      <p>
+        Empowering students through education,
+        knowledge and opportunities.
+      </p>
+    </div>
+
+    <div>
+      <h3>Quick Links</h3>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#courses">Courses</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div>
+      <h3>Follow Us</h3>
+      <p>Facebook • Instagram • YouTube</p>
+    </div>
+
+  </div>
+
+  <div class="copyright">
+    © 2026 Lalit Narayan Mishra College. All Rights Reserved.
+  </div>
+
+</footer>
+
+
+<!-- LOGIN MODAL -->
+<div class="modal" id="loginModal">
+
+  <div class="modal-box">
+
+    <span class="close" onclick="closeModals()">×</span>
+
+    <div class="modal-icon">🔐</div>
+
+    <h2>Student Login</h2>
+    <p>Login to your student account</p>
+
+    <input type="email" placeholder="Email Address">
+    <input type="password" placeholder="Password">
+
+    <button onclick="loginUser()">Login</button>
+
+    <p class="switch">
+      Don't have an account?
+      <a onclick="openRegister()">Register</a>
+    </p>
+
+  </div>
+</div>
+
+
+<!-- REGISTER MODAL -->
+<div class="modal" id="registerModal">
+
+  <div class="modal-box">
+
+    <span class="close" onclick="closeModals()">×</span>
+
+    <div class="modal-icon">🎓</div>
+
+    <h2>Create Account</h2>
+    <p>Register as a student</p>
+
+    <input type="text" placeholder="Full Name">
+    <input type="email" placeholder="Email Address">
+    <input type="password" placeholder="Create Password">
+
+    <button onclick="registerUser()">Register</button>
+
+    <p class="switch">
+      Already have an account?
+      <a onclick="openLogin()">Login</a>
+    </p>
+
+  </div>
+</div>
+
+
+<!-- NOTICE POPUP -->
+<div class="modal" id="noticeModal">
+
+  <div class="modal-box notice-box">
+
+    <span class="close" onclick="closeModals()">×</span>
+
+    <div class="modal-icon">📢</div>
+
+    <h2 id="noticeTitle">Notice</h2>
+
+    <p>
+      This is a sample notice. You can replace this
+      information with the official college notification.
+    </p>
+
+    <button onclick="closeModals()">Close</button>
+
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+  </html>
